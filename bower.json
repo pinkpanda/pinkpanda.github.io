@@ -1,0 +1,12 @@
+{
+  "name": "pinkpanda",
+  "version": "0.0.1",
+  "homepage": "http://pinkpanda.github.io",
+  "authors": [
+    "tiste <contact@tiste.io>"
+  ],
+  "private": false,
+  "dependencies": {
+    "jquery": "~1.10.2"
+  }
+}
