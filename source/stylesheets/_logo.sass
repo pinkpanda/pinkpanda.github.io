@@ -1,0 +1,65 @@
+#panda
+  #right-eye, #right-pupil, #right-light
+    @include animation(blink 4s infinite)
+    @include transform-origin(50%)
+
+  #svg-ears
+    #right
+      @include animation(move-right-ear 4s infinite)
+      @include transform-origin(50%)
+
+    #left
+      @include animation(move-left-ear 4s infinite)
+      @include transform-origin(50%)
+
+  #mouth
+    @include animation(move-mouth 8s infinite)
+    @include transform-origin(50%)
+
+  #right-foot
+    @include animation(move-right-foot 5s infinite)
+    @include transform-origin(50%)
+
+@include keyframes(blink)
+  50%
+    @include transform(scaleX(1) scaleY(1))
+  52%
+    @include transform(scaleX(1) scaleY(0.1))
+  54%
+    @include transform(scaleX(1) scaleY(1))
+
+@include keyframes(move-right-ear)
+  0%
+    @include transform(translateX(0px))
+  10%
+    @include transform(translateX(10px))
+  20%
+    @include transform(translateX(0px))
+
+@include keyframes(move-left-ear)
+  0%
+    @include transform(translateX(0px))
+  40%
+    @include transform(translateX(0px))
+  50%
+    @include transform(translateX(-10px))
+  60%
+    @include transform(translateX(0px))
+
+@include keyframes(move-mouth)
+  30%
+    @include transform(translateX(0px))
+  40%
+    @include transform(translateX(70px) rotate(-30deg))
+  90%
+    @include transform(translateX(70px) rotate(-30deg))
+  100%
+    @include transform(translateX(0px))
+
+@include keyframes(move-right-foot)
+  0%
+    @include transform(translateY(0px))
+  10%
+    @include transform(translateY(-30px) rotate(-30deg))
+  20%
+    @include transform(translateY(0px))
