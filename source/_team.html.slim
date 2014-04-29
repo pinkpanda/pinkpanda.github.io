@@ -17,8 +17,9 @@
 .container-fluid.pbxl
   .row
     - data.team.each_with_index do |member, index|
-      .m-team.col-lg-2.text-center class=('col-lg-offset-1' if index == 0)
-        a.m-team--content class=(member.color) href=(member.link) target="_blank"
-          h3= member.name
-          h4= member.twitter
-          = image_tag member.image, width: '250px'
+      .m-team.col-lg-2.col-md-3.col-sm-4.mtl.text-center class=('col-lg-offset-1' if index == 0)
+        a.m-team--content.pbl class=(member.color) href=(member.link) target="_blank"
+          .m-team--content--social
+            h3= member.name
+            h4= member.twitter
+          = image_tag member.image, class: 'max-width'
