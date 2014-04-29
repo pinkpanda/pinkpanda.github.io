@@ -1,8 +1,8 @@
 -
-  name: Rémi Delhaye
-  link: http://rdlh.io
-  image: remi.png
-  twitter: '@rdlhio'
+  name: Antoine Nourtier
+  link: http://antoine-nourtier.fr
+  image: antoine.png
+  twitter: '@antoinenourtier'
   color: orange
 
 -
@@ -20,8 +20,15 @@
   color: green
 
 -
-  name: Antoine Nourtier
-  link: http://antoine-nourtier.fr
-  image: antoine.png
-  twitter: '@lebeaucheu'
+  name: Rémi Delhaye
+  link: http://rdlh.io
+  image: remi.png
+  twitter: '@rdlhio'
   color: blue
+
+-
+  name: Valentin Poddany
+  link: http://valentin.poddany.fr
+  image: valentin.png
+  twitter: '@ValentinPoddany'
+  color: dark-blue
