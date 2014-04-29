@@ -8,6 +8,10 @@ activate :deploy do |deploy|
   deploy.build_before = true
 end
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-42477577-5'
+end
+
 set :css_dir, 'stylesheets'
 set :images_dir, 'images'
 set :js_dir, 'javascripts'
