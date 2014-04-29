@@ -2,9 +2,14 @@ html, body
   height: 100%
   font-family: "Lato", "sans-serif"
 
+.m-rainbow--container
+  position: relative
+  height: 100%
+
 .m-rainbow
   overflow: hidden
-  position: relative
+  position: absolute
+  width: 100%
   height: 100%
 
 .m-rainbow:before
@@ -18,6 +23,9 @@ html, body
   z-index: -1
   background-image: url(../images/rainbow.png)
   @include transform(rotate(45deg))
+
+.m-rainbow--fast:before
+  @include animation(rainbow 2s linear infinite)
 
 .huge
   font-size: 10em

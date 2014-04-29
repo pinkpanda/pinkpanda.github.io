@@ -7,6 +7,8 @@
   ],
   "private": false,
   "dependencies": {
-    "jquery": "~1.10.2"
+    "cheet.js": "~0.3.0",
+    "jquery": "~1.10.2",
+    "underscore": "~1.6.0"
   }
 }
