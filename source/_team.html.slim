@@ -1,0 +1,23 @@
+.container.pbxl
+  .row
+    .col-lg-12
+      h2.m-team--title.text-center.mvxl
+        span OUR (
+        span.pink-text W
+        span.orange-text O
+        span.yellow-text N
+        span.green-text D
+        span.dark-green-text E
+        span.blue-text R
+        span.dark-blue-text F
+        span.orange-text U
+        span.pink-text L
+        span ) TEAM
+
+  .row
+    - data.team.each do |member|
+      .m-team.col-lg-3.text-center
+        a.m-team--content class=(member.color) href=(member.link) target="_blank"
+          h3= member.name
+          h4= member.twitter
+          = image_tag member.image, width: '250px'

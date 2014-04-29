@@ -1,0 +1,28 @@
+.m-footer--rainbow.mtxl
+
+footer.m-footer
+  .container
+    .row
+      .col-lg-4.mvxl
+        h3 We are... Pandas !
+        ul.pln
+          - data.team.each do |member|
+            li
+              a class="#{member.color}-text" href=(member.link)
+                = member.name
+          li.pink-text You?
+
+      .col-lg-4.mvxl
+        h3 Our projects
+        ul.pln
+          - if data.projects
+            - data.projects.sort_by(&:date).each do |project|
+              li
+                a class="#{project.color}-text" href=(project.link)
+                  = "#{project.name} (#{project.date})"
+          - else
+            li.pink-text We dont have any project at this time :(
+
+      .col-lg-4.mvxl.text-center
+        h3 Hi sweety ♥
+        = partial 'panda', locals: { width: '150px' }
