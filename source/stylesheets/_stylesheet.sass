@@ -1,2 +1,29 @@
+html, body
+  height: 100%
+
+.m-rainbow
+  overflow: hidden
+  position: relative
+  height: 100%
+
+.m-rainbow:before
+  @include animation(rainbow 6s linear infinite)
+  content: ""
+  position: absolute
+  width: 400%
+  height: 400%
+  top: -100%
+  left: -100%
+  z-index: -1
+  background-image: url(../images/rainbow.png)
+  @include transform(rotate(45deg))
+
 .huge
   font-size: 10em
+
+@include keyframes(rainbow)
+  0%
+    background-position: 0 0
+
+  100%
+    background-position: 1500px 0
