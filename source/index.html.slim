@@ -1,4 +1,5 @@
-.m-rainbow
+.m-rainbow--container
+  .m-rainbow
 
 .pos-absolute-center.max-width.text-center
   h1.huge
@@ -6,7 +7,8 @@
     span.orange-text i
     span.yellow-text n
     span.green-text k
-    = partial 'panda', locals: { width: '300px' }
+    #panda-main.li-inline
+      = partial 'panda', locals: { width: '300px' }
     span.dark-green-text P
     span.blue-text a
     span.dark-blue-text n
