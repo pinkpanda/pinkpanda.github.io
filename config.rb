@@ -9,7 +9,7 @@ activate :deploy do |deploy|
 end
 
 activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-42477577-5'
+  ga.tracking_id = 'UA-50633011-1'
 end
 
 set :css_dir, 'stylesheets'
