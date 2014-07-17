@@ -2,22 +2,25 @@
   .row
     .col-lg-12
       h2.m-team--title.text-center.mvxl
-        span OUR (
-        span.pink-text W
-        span.orange-text O
-        span.yellow-text N
-        span.green-text D
-        span.dark-green-text E
-        span.blue-text R
-        span.dark-blue-text F
-        span.orange-text U
-        span.pink-text L
-        span ) TEAM
+        .m-team--responsive--title
+          span OUR
+        .m-team--responsive--title
+          span.pink-text W
+          span.orange-text O
+          span.yellow-text N
+          span.green-text D
+          span.dark-green-text E
+          span.blue-text R
+          span.dark-blue-text F
+          span.orange-text U
+          span.pink-text L
+        .m-team--responsive--title
+          span TEAM
 
 .container-fluid.pbxl
   .row
     - data.team.each_with_index do |member, index|
-      .m-team.col-lg-2.col-md-3.col-sm-4.mtl.text-center class=('col-lg-offset-1' if index == 0)
+      .m-team.col-lg-2.col-md-3.col-sm-4.col-xs-6.mtl.text-center class=('col-lg-offset-1' if index == 0)
         a.m-team--content.pbl class=(member.color) href=(member.link) target="_blank"
           .m-team--content--social
             h3= member.name

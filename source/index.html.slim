@@ -8,7 +8,10 @@
     span.yellow-text n
     span.green-text k
     #panda-main.li-inline
-      = partial 'panda', locals: { width: '300px' }
+      .hidden-xs.hidden-sm
+        = partial 'panda', locals: { width: '300px' }
+      .hidden-lg.hidden-md
+        = partial 'panda', locals: { width: '150px' }
     span.dark-green-text P
     span.blue-text a
     span.dark-blue-text n
