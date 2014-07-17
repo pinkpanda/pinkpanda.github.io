@@ -2,6 +2,7 @@
   name: Antoine Nourtier
   link: http://antoine-nourtier.fr
   image: antoine.png
+  type: Web developper
   twitter: '@antoinenourtier'
   color: orange
 
@@ -9,6 +10,7 @@
   name: Baptiste Lecocq
   link: http://tiste.io
   image: baptiste.png
+  type: Web developper
   twitter: '@tiste'
   color: yellow
 
@@ -16,6 +18,7 @@
   name: Benjamin Sénéchal
   link: http://benjaminsenechal.com
   image: benjamin.png
+  type: Mobile developper
   twitter: '@benjaminsenechal'
   color: green
 
@@ -23,6 +26,7 @@
   name: Rémi Delhaye
   link: http://rdlh.io
   image: remi.png
+  type: Web developper
   twitter: '@rdlhio'
   color: blue
 
@@ -30,5 +34,6 @@
   name: Valentin Poddany
   link: http://valentin.poddany.fr
   image: valentin.png
+  type: Business development
   twitter: '@ValentinPoddany'
   color: dark-blue
