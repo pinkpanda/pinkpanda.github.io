@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "homepage": "http://pinkpanda.github.io",
   "authors": [
-    "tiste <contact@tiste.io>"
+    "tiste <hello@tiste.io>",
+    "rdlh <contact@rdlh.io>"
   ],
   "private": false,
   "dependencies": {
