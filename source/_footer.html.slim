@@ -3,7 +3,7 @@
 footer.m-footer
   .container
     .row
-      .col-lg-4.col-xs-6.mvxl
+      .col-lg-4.col-sm-4.col-xs-6.mvxl
         h3 We are... Pandas !
         ul.pln
           - data.team.each do |member|
@@ -12,7 +12,7 @@ footer.m-footer
                 = member.name
           li.pink-text You?
 
-      .col-lg-4.col-xs-6.mvxl
+      .col-lg-4.col-sm-4.col-xs-6.mvxl
         h3 Our projects
         ul.pln
           - if data.projects
@@ -23,7 +23,7 @@ footer.m-footer
           - else
             li.pink-text We dont have any project at this time :(
 
-      .col-lg-4.col-xs-12.mvxl.text-center
+      .col-lg-4.col-sm-4.col-xs-12.mvxl.text-center
         h3 Hi sweety ♥
         #panda-footer
           = partial 'panda', locals: { width: '150px' }
